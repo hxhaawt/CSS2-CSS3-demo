@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <style >
+    .demo-ul{
+        margin-left: 100px;
+        margin-bottom: 300px;
+    }
+    .demo-ul li{
+        padding: 0 10px;
+        width: 100px;
+        background: #f90;
+        position: relative;
+    }
+    .demo-ul li a{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .demo-ul li ul{
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        left: 0;
+        transform: scaleY(0);
+        // display: none;
+        overflow: hidden;
+    }
+    
+    .ul-transition ul{
+        transform-origin: 0 0;
+        transition: all .5s;
+    }
+    .demo-ul li:hover ul{
+        transform: scaleY(1);
+        // display: block;
+    }
+    .demo-ul li ul li{
+        float: none;
+        background: #0099ff;
+    }
+    ul, li {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    .content{
+        width: 1000px;
+        height: 1000px;
+        margin: 0 auto;
+    }
+    .span-test1 {
+        border: 6px solid transparent;
+        border-top: 6px solid green;
+    }
+    .span-test2 {
+        border: 10px solid transparent;
+        border-bottom: 10px solid green;
+    }
+
+    .div11 {
+        position: relative;
+        backgorund-color: gray;
+        width: 60px;
+        height: 60px;
+        border: 3px solid green;
+    }
+    .div11 .span-test1 {
+        position: absolute;
+        top: 24px;
+        right: 10px;
+        z-index: 5;
+    }
+    .div11 ul {
+        height: 60px;
+        overflow: hidden;
+        z-index: 3;
+        background-color: #fff;
+    }
+    .div11 li {
+        width: 40px;
+        height: 40px;
+        padding: 15px 5px 5px 15px;
+        display: block;
+        // background-color: gray;
+    }
+    .div11:hover ul {
+        // overflow 是没有过度效果的，不能用transition
+        overflow: visible;
+    }
+    .div11 li:hover {
+        background-color: #ffd;
+    }
+    .div11:hover .span-test1 {
+        top: 18px;
+        border: 6px solid transparent;
+        border-bottom: 6px solid green;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="demo-hover demo-ul t_c">
+        <ul class="fllil">
+            <li>
+                <a href="javascript:;">html</a>
+                <ul>
+                    <li><a href="#">div</a></li>
+                    <li><a href="#">h1</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">js</a>
+                <ul>
+                    <li><a href="#">string</a></li>
+                    <li><a href="#">array</a></li>
+                    <li><a href="#">object</a></li>
+                    <li><a href="#">number</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">css3</a>
+                <ul>
+                    <li><a href="#">transition</a></li>
+                    <li><a href="#">animation</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">框架</a>
+                <ul>
+                    <li><a href="#">vue</a></li>
+                    <li><a href="#">react</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="demo-hover demo-ul ul-transition t_c">
+        <ul class="fllil">
+            <li>
+                <a href="javascript:;">html</a>
+                <ul>
+                    <li><a href="#">div</a></li>
+                    <li><a href="#">h1</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">js</a>
+                <ul>
+                    <li><a href="#">string</a></li>
+                    <li><a href="#">array</a></li>
+                    <li><a href="#">object</a></li>
+                    <li><a href="#">number</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">css3</a>
+                <ul>
+                    <li><a href="#">transition</a></li>
+                    <li><a href="#">animation</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">框架</a>
+                <ul>
+                    <li><a href="#">vue</a></li>
+                    <li><a href="#">react</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class='content'>
+        <div class="div11">
+            <span class="span-test1"></span>
+            <ul>
+                <li>11</li>
+                <li>22</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

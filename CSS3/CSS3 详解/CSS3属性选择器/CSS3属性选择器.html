@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3属性选择器</title>
+	<style>
+		a[href $= html]:after {
+			content: '网页文件';
+			color: green;
+		}
+		a[href $= jpg]:after {
+			content: '网页图片';
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+
+	<a href="anli.html">网站首页</a>
+	<a href="1.jpg">网站图片</a>
+
+
+</body>
+</html>

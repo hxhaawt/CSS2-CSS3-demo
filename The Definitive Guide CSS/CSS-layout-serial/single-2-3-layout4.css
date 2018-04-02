@@ -1,0 +1,62 @@
+
+/*
+d. 双飞翼布局(float + 负margin + margin)
+
+原理说明：
+
+双飞翼布局和圣杯布局的思想有些相似，
+都利用了浮动和负边距，但双飞翼布局在圣杯布局上做了改进，
+在main元素上加了一层div, 并设置margin,由于两侧栏的负边距都是相对于main-wrap而言，
+main的margin值变化便不会影响两个侧栏，因此省掉了对两侧栏设置相对布局的步骤。
+一些说明
+
+圣杯采用的是padding，而双飞翼采用的margin，解决了圣杯布局main的最小宽度不能小于左侧栏的缺点。
+双飞翼布局不用设置相对布局，以及对应的left和right值。
+通过引入相对布局，可以实现三栏布局的各种组合，例
+如对右侧栏设置position: relative; left: 190px; ,
+可以实现sub+extra+main的布局。
+
+二列的实现方法
+
+如果是左边带有侧栏的二栏布局，则去掉右侧栏，不
+要设置main-wrap的margin-right值，其他操作相同。反之亦然。
+
+*/
+.main-wrap {
+    float: left;
+    width: 100%;
+}
+
+.left {
+    float: left;
+    width: 190px;
+    margin-left: -100%;
+    /*margin-left: -300px;*/
+
+    height: 300px;
+    background-color: yellow;
+}
+.right {
+    float: left;
+    width: 230px;
+    margin-left: -230px;
+
+    height: 300px;
+    background-color: bisque;
+}
+/*
+#main {
+    margin: 0 230px 0 190px;
+
+    height: 300px;
+    background-color: cyan;
+}
+*/
+
+
+
+
+
+
+
+

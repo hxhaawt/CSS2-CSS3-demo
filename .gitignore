@@ -1,0 +1,12 @@
+#.idea/
+#.idea/*
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# my project files
+
+node_modules/

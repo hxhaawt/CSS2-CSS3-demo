@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>在多个标题前加上连续的编号</title>
+	<style>
+
+		h1:before{
+			/* h1jsq 只是一个名称，可以根据需要自己定*/
+			content: counter(h1jsq)'.';
+			margin-right: 2px;
+			color: green;
+			font-size: 24px;
+		}
+		h1{
+			counter-increment: h1jsq;
+		}
+		h2:before{
+			/* h2jsq 只是一个名称，可以根据需要自己定*/
+			content: '第'counter(h2jsq)'个：';
+			margin-right: 2px;
+		}
+		h2{
+			counter-increment: h2jsq;
+		}
+		
+		h3:before{
+			content: counter(h3jsq,upper-roman);
+		}
+		h3{
+			counter-increment: h3jsq;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>在多个标题前加上连续的编号</h1>
+	<p>测试时加上编号</p>
+	<h1>在多个标题前加上连续的编号</h1>
+	<p>测试时加上编号</p>
+	<h1>在多个标题前加上连续的编号</h1>
+	<p>测试时加上编号</p>
+	<h1>在多个标题前加上连续的编号</h1>
+	<p>测试时加上编号</p>
+	<h1>在多个标题前加上连续的编号</h1>
+	<p>测试时加上编号</p>
+	<h1>在多个标题前加上连续的编号</h1>
+	<p>测试时加上编号</p>
+	
+	<h2>在多个标题前加上连续的编号</h2>
+	<p>测试时加上编号</p>
+	<h2>在多个标题前加上连续的编号</h2>
+	<p>测试时加上编号</p>
+	<h2>在多个标题前加上连续的编号</h2>
+	<p>测试时加上编号</p>
+	
+	<h3>在多个标题前加上连续的编号</h3>
+	<p>测试时加上编号</p>
+	
+	<h3>在多个标题前加上连续的编号</h3>
+	<p>测试时加上编号</p>
+	<h3>在多个标题前加上连续的编号</h3>
+	<p>测试时加上编号</p>
+	<h3>在多个标题前加上连续的编号</h3>
+	<p>测试时加上编号</p>
+
+</body>
+</html>

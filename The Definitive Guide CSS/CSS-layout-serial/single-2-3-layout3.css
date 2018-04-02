@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/*
+c. 圣杯布局(float + 负margin + padding + position)
+
+原理说明：
+
+    主面板设置宽度为100%，主面板与两个侧栏都设置浮动，
+    常见为左浮动，这时两个侧栏会被主面板挤下去。
+    通过负边距将浮动的侧栏拉上来，左侧栏的负边距为100%，
+    刚好是窗口的宽度，因此会从主面板下面的左边跑到与主面板对齐的左边，
+    右侧栏此时浮动在主面板下面的左边，设置负边距为负的自身宽度刚好浮动到主面板对齐的右边。
+    为了避免侧栏遮挡主面板内容，在外层设置左右padding值为左右侧栏的宽度，
+    给侧栏腾出空间，此时主面板的宽度减小。由于侧栏的负margin都是相对主面板的，
+    两个侧栏并不会像我们理想中的停靠在左右两边，
+    而是跟着缩小的主面板一起向中间靠拢。
+    此时使用相对布局，调整两个侧栏到相应的位置。
+*/
+
+#bd {
+    padding: 0 230px 0 190px;
+}
+.col{
+    float: left;
+    position: relative;
+    height: 300px;
+}
+.main {
+    width: 100%; 
+    background-color: cyan;
+}
+.left {
+    width: 190px;
+    margin-left: -100%;
+    left: -190px;
+    background-color: yellow;
+}
+.right {
+    width: 230px;
+    margin-left: -230px;
+    right: -230px;
+    background-color: navajowhite;
+}
+
+/*.right {*/
+    /*width: 230px;*/
+    /*margin-right: -230px;*/
+    /*!*right: -230px;*!*/
+    /*background-color: navajowhite;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

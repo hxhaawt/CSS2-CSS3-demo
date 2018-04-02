@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>default伪类选择器</title>
+    <style>
+	    /* 表单中选中的样式 */
+	    input[type='checkbox']:checked {
+		    outline: 2px solid blue;
+	    }
+	    /* 表单中默认选中的样式 */
+	    input[type="checkbox"]:default{
+		    outline: 2px solid green;
+	    }
+	    /* indeterminate只对radio有效果，一组表单中一个都没有选中时的样式 */
+	    input[type='radio']:indeterminate{
+		    outline: 2px solid red;
+	    }
+	    input[type='radio']:checked {
+		    outline: 2px solid gold;
+	    }
+    </style>
+</head>
+<body>
+<h1>default伪类选择器</h1>
+<form>
+    房屋状态：
+    <input type="checkbox" checked>水
+    <input type="checkbox">电
+    <input type="checkbox">气
+    <input type="checkbox">光纤
+</form>
+<form>
+	天气状态：
+	<input name="tq" type="radio">坏
+	<input name="tq" type="radio">一般
+	<input name="tq" type="radio">良
+	<input name="tq" type="radio">好
+</form>
+</body>
+</html>

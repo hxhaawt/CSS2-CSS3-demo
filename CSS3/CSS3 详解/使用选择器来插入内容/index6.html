@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>在多个标题前加上连续的编号</title>
+	<style>
+
+		h1:before{
+			/* h1jsq 只是一个名称，可以根据需要自己定*/
+			content: counter(h1jsq)'.';
+			margin-right: 2px;
+			color: green;
+		}
+		h1{
+			counter-increment: h1jsq;
+			/* h2jsq重置 */
+			counter-reset: h2jsq;
+		}
+		h2:before{
+			content: counter(h1jsq)'-'counter(h2jsq);
+		}
+		h2{
+			counter-increment: h2jsq;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>在多个标题前加上连续的编号</h1>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+	<h1>在多个标题前加上连续的编号</h1>
+	<h1>在多个标题前加上连续的编号</h1>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+	<h1>在多个标题前加上连续的编号</h1>
+	<h1>在多个标题前加上连续的编号</h1>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+	<h2>编号的嵌套和重置</h2>
+</body>
+</html>

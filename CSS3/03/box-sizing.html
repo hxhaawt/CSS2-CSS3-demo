@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>css3 box-sizing</title>
+</head>
+<style type="text/css">
+    
+    .box1{
+        overflow: hidden;
+        white-space: nowrap; 
+        margin: 10px auto;
+        padding: 10px;
+        // box-sizing: border-box;
+        border: 10px solid red;
+        width: 100px;
+        height: 100px;
+        
+        color: #fff;
+        background-color: blue;
+    }
+
+    .box2{
+        overflow: hidden;
+        white-space: nowrap; 
+        margin: 10px auto;
+        padding: 10px;
+        box-sizing: content-box;
+        border: 10px solid red;
+        width: 100px;
+        height: 100px;
+        
+        color: #fff;
+        background-color: blue;
+    }
+
+    .box3{
+        overflow: hidden;
+        white-space: nowrap; 
+        margin: 20px auto;
+        padding: 30px;
+        box-sizing: border-box;
+        border: 30px solid red;
+        width: 100px;
+        height: 100px;
+        
+        color: #fff;
+        background-color: blue;
+    }
+
+
+    .box4{
+/*         overflow: hidden;
+        white-space: nowrap;  */
+        margin: 20px auto;
+        padding: 30px;
+        box-sizing: border-box;
+        border: 30px solid red;
+        width: 100px;
+        height: 100px;
+        
+        color: #fff;
+        background-color: blue;
+    }
+
+    .box5 {
+        color: red;
+        margin: 20px auto;
+        width: 300px;
+    }
+    .box5 > div {
+        color: blue;
+    }
+
+    
+
+</style>
+<body>
+
+    <div class="box1">
+        this is div box
+
+    </div>
+
+
+    <div class="box2">
+        this is div box
+
+    </div>
+
+    <div class="box3">
+        this is div box
+
+    </div>
+
+    <div class="box4">
+        this is div box
+
+    </div>
+
+    <div class='box5'>
+        <p>111</P>
+        <div>
+            <p>222</p>
+            <div>
+                <p>333</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

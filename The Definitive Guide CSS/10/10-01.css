@@ -1,0 +1,27 @@
+
+img.sideline{
+    float: left;
+    margin-right: -20px;
+    /*margin: 10px -15px 10px 10px;*/
+}
+p.box{
+    border: 2px solid green;
+    padding: 0.5em;
+    /*clear: left;*/
+}
+
+p.box strong{
+    border: 2px solid blue;
+    background-color: silver;
+    padding: 2px;
+}
+h2#jump-up{
+    margin-top: -15px;
+    background-color: silver;
+}
+
+
+
+
+
+

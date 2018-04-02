@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>css3 box-sizing</title>
+</head>
+<style type="text/css">    
+
+    .box1, .box2 {
+        margin: 20px auto;
+        width: 300px;
+        border: 1px solid blue;
+    }
+
+   .box1 h1 + p {
+        color: blue;
+    }
+
+    .box2 h1~ p {
+        color: red;
+    }
+
+    
+    .box1 .test1 {
+        color: blue;
+    }
+    
+    .test1 {
+        color: red;
+    }
+
+    li{
+        list-style:none;
+        margin-bottom:10px;
+        display:inline-block;
+        color: blue;
+    }
+  
+    .nav li ~ li {
+        color: green;
+    }
+  
+
+
+</style>
+<body>
+
+    <div class='box1'>
+        <p>22222</p>
+        <p>3333</p>
+        <h1>1111</h1>
+        <p>22222</p>
+        <p>3333</p>
+        <p>4444</p>
+        <p>5555</p>
+        <p>6666</p>
+    </div>
+
+    <div class='box2'>
+        <p>22222</p>
+        <p>3333</p>
+        <h1>1111</h1>
+        <p>22222</p>
+        <p>3333</p>
+        <p>4444</p>
+        <p>5555</p>
+        <p>6666</p>
+    </div>
+
+    <div class="box1">
+        <div class="test1"> test div </div>
+    </div>
+
+
+    <ul class="nav">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ul>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

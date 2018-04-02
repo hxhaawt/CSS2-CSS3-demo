@@ -1,0 +1,57 @@
+
+/*
+ 二列&三列布局
+
+ 二列布局的特征是侧栏固定宽度，主栏自适应宽度。
+ 三列布局的特征是两侧两列固定宽度，中间列自适应宽度。
+*/
+
+/*
+a. float+margin
+
+原理说明：设置两个侧栏分别向左向右浮动，中间列通过外边距给两个侧栏腾出空间，
+            中间列的宽度根据浏览器窗口自适应
+
+*/
+/* 3列 */
+.left{
+    width: 100px;
+    float: left;
+    background-color: bisque;
+}
+.right{
+    width: 200px;
+    float: right;
+    background-color: bisque;
+}
+.midden{
+    margin-left: 130px;
+    margin-right: 230px;
+    background-color: green;
+}
+
+/* 2列 */
+#content2{
+    margin-top: 50px;
+    /*height: 200px;*/
+}
+.sub2{
+    width: 100px;
+    float: left;
+    background-color: bisque;
+}
+
+.main2{
+    margin-left: 130px;
+    /*margin-right: 230px;*/
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+

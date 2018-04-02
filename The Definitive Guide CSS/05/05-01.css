@@ -1,0 +1,135 @@
+
+#top-div{
+    width: 800px;
+    /*height: 2000px;*/
+    margin-left: 60px;
+    /*margin-top: 0px;*/
+    background-color: antiquewhite;
+}
+
+#div1{
+    /*width: 200px;*/
+    height: 200px;
+    color: blue;
+    background-color: aqua;
+    padding: 20px;
+    margin: 30px;
+    border: 10px dashed;
+    text-align: center;
+    /*vertical-align: bottom;*/
+}
+
+#div2{
+    width: 200px;
+    height: 200px;
+    color: blue;
+    background-color: aqua;
+    padding: 20px;
+    margin: 30px;
+    border: 10px solid red;
+}
+
+#div3{
+    margin-left: auto;
+    margin-right: 100px;
+    /*width: 100px;*/
+    border: 2px dashed red;
+}
+
+#div4{
+    /*margin-top: 10px;*/
+    margin-left: 100px;
+    margin-right: -50px;
+    width: auto;
+    border: 2px solid green;
+}
+
+#div5{
+    margin-left: 100px;
+    margin-right: -50px;
+    width: auto;
+    border: 2px solid green;
+    margin-top: 10px;
+}
+
+#div6{
+    margin-left: 100px;
+    margin-right: auto;
+    width: 750px;
+    border: 2px solid green;
+    margin-top: 10px;
+}
+
+#div7{
+    margin-left: -50px;
+    margin-right: 100px;
+    width: auto;
+    border: 2px solid green;
+    margin-top: 10px;
+}
+
+#div8{
+    margin-left: -50px;
+    /*margin-right: 100px;*/
+    width: 200px;
+    border: 2px solid green;
+    margin-top: 10px;
+}
+
+#div9{
+    /*margin-left: -50px;*/
+    /*margin-right: 100px;*/
+    width: 200px;
+    border: 2px solid green;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

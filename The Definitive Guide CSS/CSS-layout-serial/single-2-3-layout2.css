@@ -1,0 +1,41 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+/*
+b. position+margin
+
+原理说明：通过绝对定位将两个侧栏固定，同样通过外边距给两个侧栏腾出空间，中间列自适应。
+
+*/
+
+/* 3列 */
+.sub, .extra{
+    position: absolute;
+    top: 0;
+    width: 200px;
+
+    /*height: 500px;*/
+    background-color: wheat;
+}
+.sub{
+    left: 0;
+}
+.extra{
+    right: 0;
+}
+.main{
+    margin: 0 200px;
+
+    /*min-width: 800px;*/
+    /*height: 500px;*/
+    background-color: green;
+}
+
+/*
+二列的实现方法
+
+如果是左边带有侧栏的二栏布局，则去掉右侧栏，不要设置主面板的margin-right值，其他操作相同。反之亦然。
+
+*/
