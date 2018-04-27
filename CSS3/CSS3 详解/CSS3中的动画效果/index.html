@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>transition属性</title>
+    <style>
+        div.box1{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+	        transition: all 1s;
+            /*transition: background-color 1s linear, width 1s linear;*/
+        }
+        div.box1:hover{
+            background-color: #f60;
+            width: 900px;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+	<h1>transition属性</h1>
+	<div class="box1"></div>
+</body>
+</html>

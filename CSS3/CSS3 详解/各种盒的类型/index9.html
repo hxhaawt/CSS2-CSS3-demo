@@ -6,7 +6,10 @@
     <style>
         div.table{
             display: table;
-            border: solid 3px #ccc;
+            /*border: 1px solid #ccc;*/
+	        border-collapse: collapse;
+	        
+	        width: 200px;
         }
         div.table-caption{
             display: table-caption;
@@ -19,13 +22,15 @@
         }
         div.td{
             display: table-cell;
-            border: solid 3px #898989;
+            border: 1px solid green;
             padding: 5px;
+	        
+	        text-align: center;
         }
     </style>
 </head>
 <body>
-<h1>CSS3中所有与表格相关的元素</h1>
+<h1>CSS3中所有与表格相关的元素，用div来模拟table表格</h1>
 <div class="table">
     <div class="table-caption">表格标题</div>
     <div class="thead">

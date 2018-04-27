@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Float属性布局</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.box{
+			display: flex;
+			/* 表示宽度不够时，可以换行，默认为不换行，即使宽度不够，就会将宽度压缩*/
+			/* 如下面的宽200px但是由于屏幕宽度不够，所以实际宽度小于200px*/
+			flex-wrap: wrap;
+		}
+		.item{
+			width: 200px;
+			margin: 10px;
+			background-color: #0f0;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="box">
+	
+	<div class="item">
+		<h2>栏目列表</h2>
+		<ul>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<h2>栏目列表</h2>
+		<ul>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<h2>栏目列表</h2>
+		<ul>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<h2>栏目列表</h2>
+		<ul>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<h2>栏目列表</h2>
+		<ul>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<h2>栏目列表</h2>
+		<ul>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<h2>栏目列表</h2>
+		<ul>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<h2>栏目列表</h2>
+		<ul>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+			<li><a href="index.html">栏目名称</a> </li>
+		</ul>
+	</div>
+	
+</div>
+
+</body>
+</html>

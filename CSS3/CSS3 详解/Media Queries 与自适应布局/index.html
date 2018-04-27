@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Media Queries模块</title>
+    <style>
+	    
+	    #div1{
+		    width: 100px;
+		    height: 100px;
+		    background-color: #555;
+	    }
+	    /* 当浏览器窗口大于300px的样式，样式放置的顺序不能乱了*/
+        @media screen and (min-width:300px) {
+            #div1{
+                width: 300px;
+	            height: 300px;
+	            background-color: #ff1e00;
+            }
+        }
+	    /* 当浏览器窗口大于500px的样式 */
+        @media screen and (min-width:500px) {
+            #div1{
+                width: 500px;
+	            height: 500px;
+	            background-color: #0f0;
+            }
+        }
+	    /* 当浏览器窗口大于800px的样式 */
+        @media screen and (min-width:800px) {
+            #div1{
+                width: 800px;
+	            height: 800px;
+	            background-color: #0752ff;
+            }
+        }
+	    
+	    @media screen and (min-width: 1000px) {
+		    #div1{
+			    width: 1000px;
+			    height: 1000px;
+			    background-color: aquamarine;
+		    }
+	    }
+
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS3中新增的 background-origin属性</title>
+    <style>
+        div{
+            width: 600px;
+            height: 300px;
+            background-image: url("bj.png");
+            background-repeat: no-repeat;
+            border: dashed 30px green;
+            padding: 30px;
+	        
+	        /* background-origin 属性规定 background-position 属性相对于什么位置来定位。*/
+            /*background-origin: content-box;*/
+            background-origin: padding-box;
+	        
+	        /* 把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。 */
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+<h1> background-origin</h1>
+<div id="div"></div>
+</body>
+</html>

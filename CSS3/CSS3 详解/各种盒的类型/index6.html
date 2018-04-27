@@ -4,36 +4,60 @@
     <meta charset="UTF-8">
     <title>inline-table类型</title>
     <style>
-        table{
+        table.box1{
             display: inline-table;
             vertical-align: bottom;
-            border: solid 3px #ccc;
+            border: 1px solid #ccc;
         }
-        td{
-            border: solid 3px #898989;
+        tr,td{
+            border: 2px solid #898989;
+        }
+        table.box2{
+	        border-collapse: collapse;
         }
     </style>
 </head>
 <body>
 <h1>inline-table类型</h1>
-这里是文字内容
-<table>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-</table>
-这里是文字内容
+	这里是文字内容
+	<table class="box1">
+	    <tr>
+	        <td>1</td>
+	        <td>2</td>
+	        <td>3</td>
+	    </tr>
+	    <tr>
+	        <td>1</td>
+	        <td>2</td>
+	        <td>3</td>
+	    </tr>
+	    <tr>
+	        <td>1</td>
+	        <td>2</td>
+	        <td>3</td>
+	    </tr>
+	</table>
+	这里是文字内容--这是display: inline-table显示
+	<br>
+	<br>
+	这里是文字内容
+	<table class="box2">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+	</table>
+	这里是文字内容
 </body>
 </html>

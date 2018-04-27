@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>border-image属性</title>
+    <style>
+        div.box1{
+            width: 900px;
+            height: 300px;
+	        margin-bottom: 30px;
+	        
+	        border:15px solid transparent;
+	        
+            -webkit-border-image:url("2.png") 100/100px round;
+        }
+        
+        div.box2{
+            width: 900px;
+            height: 300px;
+	        margin-bottom: 30px;
+            -webkit-border-image:url("3.jpg") 100/20px 40px 100px 60px;
+        }
+        
+        div.box3{
+            width: 900px;
+            height: 300px;
+	        margin-bottom: 30px;
+	
+	        -webkit-border-image:url("3.jpg") 100/20px 40px 100px 60px round;
+        }
+        
+        div.box4{
+            width: 900px;
+            height: 300px;
+	        
+            -webkit-border-image:url("3.jpg") 100/20px 40px 100px 60px stretch round;
+        }
+    </style>
+</head>
+<body>
+<h1>border-image属性</h1>
+<div class="box1">1111111111111</div>
+<div class="box2">2222222222222</div>
+<div class="box3">3333333333333</div>
+<div class="box4">4444444444444</div>
+
+<br>
+<br>
+<br>
+<h3>用来作border-image的原图</h3>
+<img src="2.png">
+</body>
+</html>

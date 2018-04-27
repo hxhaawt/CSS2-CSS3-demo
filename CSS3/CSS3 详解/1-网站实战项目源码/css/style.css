@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: '微软雅黑';
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 755px;
+}
+.sousuo {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 58px;
+    width: 240px;
+}
+
+input{
+    font-family: '微软雅黑';
+}
+
+input[type="text"] {
+
+    height: 40px;
+    width: 165px;
+    line-height: 40px;
+    padding-left: 10px;
+
+    font-size: 20px;
+    border: solid 1px #ccc;
+
+    background-color: #f3f3f3;
+    vertical-align: top;
+}
+input[type="submit"]{
+    height: 42px;
+    border: 1px solid #3598db;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 10px;
+    background-color: #3598db;
+    vertical-align: top;
+}
+
+div.nav {
+    height: 60px;
+    background-color: #3598db;
+}
+
+div.nav ul {
+
+    font-size: 0;
+    list-style: none;
+}
+div.nav ul li {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    border-right: 1px solid #2f89c5;
+
+    transition: background-color .6s linear;
+}
+div.nav ul li.on,
+div.nav ul li:hover{
+    background-color: #2f89c5;
+}
+div.nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

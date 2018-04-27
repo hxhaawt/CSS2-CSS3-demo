@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>transform属性</title>
+    <style>
+        div.box1{
+            width: 300px;
+            height: 300px;
+            background-color: #00f;
+	        
+            -ms-transform:rotate(45deg); /* IE 9 */
+            -moz-transform:rotate(45deg); /* Firefox */
+            -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+            -o-transform:rotate(45deg); /* Opera */
+	        
+	        transition: all 1s;
+        }
+	    div.box1:hover{
+		    background-color: #f00;
+		    transform: rotate(0deg);
+	    }
+    </style>
+</head>
+<body>
+
+	<h1>rotate旋转--transform: rotate(xx deg)</h1>
+	
+	<div class="box1"></div>
+
+</body>
+</html>

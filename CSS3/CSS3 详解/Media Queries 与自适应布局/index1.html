@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自适应布局</title>
+    <style>
+       body{
+           margin: 20px 0;
+       }
+        #container{
+            width: 960px;
+            margin: auto;
+        }
+        #left{
+            width: 740px;
+            float: left;
+        }
+        p{
+            line-height: 600px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            color: #ffffff;
+        }
+        #left-r{
+            width: 520px;
+            float: right;
+            background-color: #656aba;
+        }
+        #left-l{
+            width: 200px;
+            float: left;
+            background-color: #ff2dc4;
+        }
+        #right{
+            width: 200px;
+            float: right;
+            background-color: #41db50;
+        }
+        
+        /* 当浏览器窗口大于1000px的样式 */
+        @media screen and (min-width: 1000px){
+            #container{
+                width: 1000px;
+            }
+            #left{
+                width: 780px;
+                float: left;
+            }
+            #left-r{
+                width: 560px;
+                float: right;
+            }
+            #left-l{
+                width: 200px;
+                float: left;
+            }
+            #right{
+                width: 200px;
+                float: right;
+            }
+        }
+       
+        /* 当浏览器窗口大小在：640px--999px之间 的样式 */
+		@media screen and (min-width: 640px) and (max-width: 999px){
+           #container{
+               width: 640px;
+           }
+           #left{
+               width: 640px;
+               float: none;
+           }
+           p{
+               line-height: 400px;
+           }
+           #left-r{
+               width: 420px;
+               float: right;
+           }
+           #left-l{
+               width: 200px;
+               float: left;
+           }
+           #right{
+               width: 100%;
+               float: none;
+               clear: both;
+               line-height: 150px;
+           }
+       }
+       
+        /* 当浏览器窗口小于或等于639px的样式 */
+		@media screen and (max-width: 639px){
+           #container{
+               width: 100%;
+           }
+           #left{
+               width: 100%;
+               float: none;
+           }
+           p{
+               line-height: 300px;
+           }
+           #left-r{
+               width: 100%;
+               float: none;
+           }
+           #left-l{
+               width:100%;
+               float: none;
+           }
+           #right{
+               width: 100%;
+               float: none;
+               /*clear: both;*/
+               line-height: 150px;
+           }
+       }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="left">
+        <p id="left-r">Conter</p>
+        <p id="left-l"> LEFT </p>
+    </div>
+    <p id="right">Right</p>
+</div>
+</body>
+</html>

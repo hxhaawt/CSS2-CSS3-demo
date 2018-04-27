@@ -7,9 +7,14 @@
         ul{
             margin:0;
             padding: 0;
+	        
+	        /* 为了清除 inline-block的间隙*/
+	        font-size: 0;
         }
         li{
+	        
             display: inline-block;
+	        
             padding: 10px 20px;
             background-color: #2292ff;
             border-right: solid 1px #2066c7;
@@ -19,13 +24,30 @@
         a{
             color: #fff;
             text-decoration: none;
+	
+	        font-size: 16px;
         }
     </style>
 </head>
 <body>
 <h1>使用inline-block类型来显示水平菜单</h1>
 <ul>
-    <li><a href="index1.html">首页</a></li><li><a href="index1.html">首页</a></li><li><a href="index1.html">首页</a></li><li><a href="index1.html">首页</a></li><li><a href="index1.html">首页</a></li>
+    <li><a href="index1.html">首页</a></li>
+	<li><a href="index1.html">首页</a></li>
+	<li><a href="index1.html">首页</a></li>
+	<li><a href="index1.html">首页</a></li>
+	<li><a href="index1.html">首页</a></li>
 </ul>
+
+<br>
+<ul>
+	<!--去除 inline-block 时元素间的间隙方法-->
+	<li><a href="index1.html">首页</a>
+	<li><a href="index1.html">首页</a>
+	<li><a href="index1.html">首页</a>
+	<li><a href="index1.html">首页</a>
+	<li><a href="index1.html">首页</a>
+</ul>
+
 </body>
 </html>

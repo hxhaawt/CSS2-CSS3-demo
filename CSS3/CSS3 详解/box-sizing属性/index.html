@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style>
+		div{
+			width: 300px;
+			height: 300px;
+			padding: 20px;
+			margin: 10px auto;
+			
+			border: 1px solid #f30;
+			background-color: #555;
+		}
+		.box1{
+			box-sizing: border-box;
+		}
+		.box2{
+			box-sizing: content-box;
+		}
+	</style>
+</head>
+<body>
+
+<div class="box1">
+	box-sizing属性测试--border-box
+</div>
+<div class="box2">
+	box-sizing属性测试--content-box
+</div>
+
+</body>
+</html>
